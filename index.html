@@ -1,0 +1,60 @@
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tip Calculator</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+
+        <script type="text/javascript" src="./su.js"></script>
+    </head>
+    <body>
+        <div id= Container>
+                <h2>Tip Calculator</h2>
+                <br><br>
+
+                <form action="/action_page.php">
+                 Total Amount:
+                  <input id=amount type="text"  placeholder ="Enter the Amount">
+                    <br>  <br>
+                        <div>
+                                Tip Percentage: 
+                                <select id= tip>
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>12.5%</option>
+                                        <option>15%</option>
+                                        <option>17%</option>
+                                        <option>20%</option>
+                                        <option>22.5%</option>
+                                        <option>25%</option>
+                                        <option>27.5%</option>
+                                        <option>30%</option>
+                                </select>
+                        </div>
+
+                        <div>
+                                    <br> 
+                                No. of People:
+                                <input id=people type="text"  placeholder ="Enter Here">
+                                    <br><br>
+                                    <br>
+                                <button id = btn  onclick="tipCalculator(); return false;"> Calculate</button>
+                                <input id = reset type="reset" value="clear" />
+
+                        </div>   
+                    </form> 
+                      
+                <div id=calculation>
+                       
+                </div>  
+        </div>
+    </body>
+</html>
