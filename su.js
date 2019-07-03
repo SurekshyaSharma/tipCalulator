@@ -1,6 +1,6 @@
 $(document).ready( function () {
    tipCalculator();
-  
+    clearfunction()
 });
 function tipCalculator(){
     console.log("let's get started");
@@ -38,14 +38,14 @@ function tipCalculator(){
                 finalTip = finalTip.toFixed(2);
 
                 console.log(finalTip);
-
+                $("#calculation").empty(); 
                     $("#calculation").append(
-                        'Your tip Amount is $ '+
-                                finalTip+ "."
-
+                        '<div style="border:1px solid black" >'+
+                        'Your tip Amount is $'+
+                                finalTip+ "."+'</div>'
                         )
+
                 }
-     //console.log(finalTip);
+              
     }
-    
     
