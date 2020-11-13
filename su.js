@@ -23,7 +23,7 @@ function tipCalculator(){
      }
      else if
          (totalAmount == 0){
-            alert(" Enter the valid amount");
+//             alert(" Enter the valid amount");
      }
      else if
          (number == 0){
