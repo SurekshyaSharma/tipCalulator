@@ -19,7 +19,7 @@ function tipCalculator(){
     //checking the inputs
      if (totalAmount == "")
      {
-        alert("Enter the valid amount");
+//         alert("Enter the valid amount");
      }
      else if
          (totalAmount == 0){
@@ -27,7 +27,7 @@ function tipCalculator(){
      }
      else if
          (number == 0){
-            alert("Enter the valid number");
+//             alert("Enter the valid number");
      }else{
 
                 
